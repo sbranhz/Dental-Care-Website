@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pregúntale a la Doc | Dental Care</title>
+  <meta name="description" content="Resolvemos tus dudas sobre ortodoncia, antes y durante tu tratamiento. Preguntas frecuentes y formulario privado para la doctora." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Dental Care - Inicio">
+        <span class="logo-mark">DC</span>
+        <span class="logo-text">Dental Care</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="FAQ.html" class="active">Pregúntale a la Doc</a></li>
+          <li><a href="casos.html">Casos de Éxito</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="index.html#contacto" class="nav-cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <p class="eyebrow">Pregúntale a la Doc</p>
+      <h1>Resolvemos tus dudas sobre ortodoncia</h1>
+      <p class="page-hero-sub">
+        Antes y durante tu tratamiento. Encuentra respuestas a las preguntas
+        más comunes, o escríbenos directamente si no encuentras la tuya.
+      </p>
+      <p class="disclaimer">
+        <strong>Aviso:</strong> La información de esta sección es orientativa y
+        no reemplaza una valoración profesional.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ TABS ============ -->
+  <section class="section faq-section">
+    <div class="container faq-container">
+
+      <div class="tabs" role="tablist" aria-label="Categorías de preguntas">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="tab-prospect" id="tab-btn-prospect">
+          Si aún no eres paciente
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-patient" id="tab-btn-patient">
+          Si ya eres paciente
+        </button>
+      </div>
+
+      <!-- PANEL: PROSPECT -->
+      <div class="tab-panel active" role="tabpanel" id="tab-prospect" aria-labelledby="tab-btn-prospect">
+        <div class="faq-list">
+
+          <details class="faq">
+            <summary>¿A qué edad puedo empezar un tratamiento?</summary>
+            <div class="faq-body">
+              <p>Hay tratamientos a casi cualquier edad. En niños, una valoración temprana ayuda a detectar problemas de crecimiento. En adultos, el tratamiento también es posible si hay buena salud de encías y huesos.</p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Cuánto dura una ortodoncia?</summary>
+            <div class="faq-body">
+              <p>Depende de cada caso. En la valoración se estima un tiempo según tu diagnóstico. <em>[Rango que confirme la doctora, ej.: 12 a 24 meses.]</em></p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Duele?</summary>
+            <div class="faq-body">
+              <p>Es normal sentir molestia los primeros días y después de algunos controles. Suele ser manejable y pasajera.</p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Qué incluye la primera valoración?</summary>
+            <div class="faq-body">
+              <p>Revisión clínica, explicación del diagnóstico y opciones de tratamiento. <em>[Confirmar si incluye estudios y si tiene costo.]</em></p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Cuánto cuesta?</summary>
+            <div class="faq-body">
+              <p>El costo depende del tipo de tratamiento y de la complejidad del caso. En la valoración recibes un plan con opciones y formas de pago.</p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Brackets o alineadores?</summary>
+            <div class="faq-body">
+              <p>No todos los casos son aptos para alineadores. En la valoración se define cuál opción es más adecuada y por qué.</p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Necesito extracciones?</summary>
+            <div class="faq-body">
+              <p>No siempre. Depende del espacio disponible y del diagnóstico.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+      <!-- PANEL: PATIENT -->
+      <div class="tab-panel" role="tabpanel" id="tab-patient" aria-labelledby="tab-btn-patient" hidden>
+        <div class="faq-list">
+
+          <details class="faq">
+            <summary>Se me salió un bracket, ¿qué hago?</summary>
+            <div class="faq-body">
+              <p>Si no te molesta, no hay que alarmarse: escríbenos para reprogramar tu cita de ajuste. Si hay un alambre que lastima, puedes cubrirlo con cera de ortodoncia y avisarnos.</p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Cómo limpio mis brackets?</summary>
+            <div class="faq-body">
+              <p>Cepillado después de cada comida, cepillo interdental y seda dental con enhebrador. <em>[Ajustar a las indicaciones de la clínica.]</em></p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Cuántas horas debo usar los alineadores?</summary>
+            <div class="faq-body">
+              <p>En general, la mayor parte del día (aproximadamente 20 a 22 horas), y solo se retiran para comer y cepillarse. Sigue siempre la indicación específica de tu plan.</p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Por qué debo usar retenedores?</summary>
+            <div class="faq-body">
+              <p>Los dientes tienden a volver a su posición anterior. El retenedor mantiene el resultado.</p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Qué puedo comer con brackets?</summary>
+            <div class="faq-body">
+              <p>Evita alimentos muy duros o pegajosos (caramelos, hielo, mordiscos directos a manzana o zanahoria).</p>
+            </div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Cada cuánto son los controles?</summary>
+            <div class="faq-body">
+              <p><em>[Frecuencia que confirme la doctora, ej.: cada 4 a 6 semanas.]</em></p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PRIVATE QUESTION FORM ============ -->
+  <section id="pregunta" class="section form-section">
+    <div class="container form-inner">
+      <div class="form-intro">
+        <p class="eyebrow">¿No encontraste tu respuesta?</p>
+        <h2>Escríbenos tu pregunta</h2>
+        <p>
+          La doctora revisa cada mensaje personalmente. Si tu pregunta puede
+          ayudar a otros pacientes, podríamos publicarla de forma anónima en
+          esta sección. Tus datos de contacto nunca serán visibles.
+        </p>
+        <ul class="form-notes">
+          <li>Respondemos en horario de atención.</li>
+          <li>Si es urgente, escríbenos por WhatsApp.</li>
+          <li>Tu información se trata según nuestra política de datos.</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required autocomplete="name" />
+        </div>
+
+        <div class="form-row">
+          <label for="contact">WhatsApp o correo</label>
+          <input type="text" id="contact" name="contact" required autocomplete="email" placeholder="Ej: 300 123 4567 o correo@dominio.com" />
+        </div>
+
+        <div class="form-row">
+          <span class="label-text">¿Ya eres paciente?</span>
+          <div class="radio-group">
+            <label class="radio">
+              <input type="radio" name="patient" value="no" checked />
+              <span>Aún no soy paciente</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="patient" value="yes" />
+              <span>Ya soy paciente</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="question">Tu pregunta</label>
+          <textarea id="question" name="question" rows="5" required placeholder="Cuéntanos en qué te podemos ayudar"></textarea>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" name="consent" required />
+          <span>Autorizo el tratamiento de mis datos personales según la <a href="privacidad.html">Política de Tratamiento de Datos</a>.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary form-submit">Enviar pregunta</button>
+
+        <p class="form-footnote">
+          Este formulario es privado. Solo la doctora y el equipo de Dental Care
+          verán tus datos.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section final-cta">
+    <div class="container final-cta-text center">
+      <h2>¿Prefieres una valoración?</h2>
+      <p>Nada reemplaza una revisión profesional. Agenda tu primera cita y resolvemos tus dudas en persona.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a href="agenda.html" class="btn btn-vinotinto">Agendar valoración</a>
+        <a href="https://wa.me/573206666666?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20ortodoncia." class="btn btn-ghost btn-ghost-light" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-mark">DC</span>
+          <span class="logo-text">Dental Care</span>
+        </a>
+        <p class="footer-desc">Ortodoncia de confianza en La Ceja, Antioquia.</p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul class="footer-list">
+          <li>Calle 20 #12-45, Barrio Centro</li>
+          <li>La Ceja, Antioquia</li>
+          <li><a href="tel:+573206666666">+57 320 666 6666</a></li>
+          <li><a href="mailto:hhhh@gmail.com">hhhh@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Horario</h4>
+        <ul class="footer-list">
+          <li>Lunes a viernes: 8am – 6pm</li>
+          <li>Sábados: 8am – 1pm</li>
+          <li>Domingos: cerrado</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Síguenos</h4>
+        <ul class="footer-list">
+          <li><a href="https://instagram.com/dentalcare.laceja" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/dentalcare.laceja" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://wa.me/573206666666" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Dental Care. Todos los derechos reservados.</p>
+      <p>
+        <a href="privacidad.html">Política de tratamiento de datos</a> ·
+        <a href="terminos.html">Términos y condiciones</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOAT ============ -->
+  <a href="https://wa.me/573206666666?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20ortodoncia."
+     class="whatsapp-float" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+      <path fill="currentColor" d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2.1c2.2 1.2 4.8 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.2c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S29 8.9 29 16s-5.8 12.7-13 12.7zm7.1-9.5c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1-2-2.3-2.2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.7.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6-.1-.2-.9-2.1-1.2-2.9-.3-.7-.6-.6-.9-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.2-.8-.4z"/>
+    </svg>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casos de Éxito | Dental Care</title>
+  <meta name="description" content="Resultados reales de pacientes de Dental Care en La Ceja. Brackets, alineadores y ortodoncia infantil — compartidos con autorización." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Dental Care - Inicio">
+        <span class="logo-mark">DC</span>
+        <span class="logo-text">Dental Care</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="FAQ.html">Pregúntale a la Doc</a></li>
+          <li><a href="casos.html" class="active">Casos de Éxito</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="index.html#contacto" class="nav-cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <p class="eyebrow">Casos de Éxito</p>
+      <h1>Cada sonrisa tiene su proceso</h1>
+      <p class="page-hero-sub">
+        Estos son algunos de los resultados de nuestros pacientes,
+        compartidos con su autorización.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ FILTER + CASES GRID ============ -->
+  <section class="section cases-section">
+    <div class="container">
+
+      <div class="filter-bar" role="group" aria-label="Filtrar casos por tratamiento">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="brackets">Brackets</button>
+        <button class="filter-btn" data-filter="alineadores">Alineadores</button>
+        <button class="filter-btn" data-filter="infantil">Infantil</button>
+      </div>
+
+      <div class="cases-grid">
+
+        <!-- Case 1 -->
+        <article class="case-card" data-treatment="brackets">
+          <div class="case-slider">
+            <div class="case-before"><span>[Foto antes]</span></div>
+            <div class="case-after"><span>[Foto después]</span></div>
+            <div class="case-handle" aria-hidden="true"></div>
+            <input type="range" class="case-range" min="0" max="100" value="50" aria-label="Comparar antes y después">
+          </div>
+          <div class="case-info">
+            <span class="case-tag">Brackets metálicos</span>
+            <h3>Apiñamiento moderado</h3>
+            <ul class="case-meta">
+              <li><strong>Duración:</strong> 18 meses</li>
+              <li><strong>Motivo:</strong> Apiñamiento y mordida cruzada</li>
+            </ul>
+            <blockquote class="case-quote">
+              "Me explicaron todo el proceso desde la primera cita y nunca me sentí perdido."
+              <footer>— Andrés M., 27 años</footer>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Case 2 -->
+        <article class="case-card" data-treatment="alineadores">
+          <div class="case-slider">
+            <div class="case-before"><span>[Foto antes]</span></div>
+            <div class="case-after"><span>[Foto después]</span></div>
+            <div class="case-handle" aria-hidden="true"></div>
+            <input type="range" class="case-range" min="0" max="100" value="50" aria-label="Comparar antes y después">
+          </div>
+          <div class="case-info">
+            <span class="case-tag">Alineadores transparentes</span>
+            <h3>Espacios y rotaciones leves</h3>
+            <ul class="case-meta">
+              <li><strong>Duración:</strong> 10 meses</li>
+              <li><strong>Motivo:</strong> Espacios interdentales</li>
+            </ul>
+            <blockquote class="case-quote">
+              "Quería alineadores y me dijeron con claridad si eran viables para mi caso."
+              <footer>— Camila R., 31 años</footer>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Case 3 -->
+        <article class="case-card" data-treatment="infantil">
+          <div class="case-slider">
+            <div class="case-before"><span>[Foto antes]</span></div>
+            <div class="case-after"><span>[Foto después]</span></div>
+            <div class="case-handle" aria-hidden="true"></div>
+            <input type="range" class="case-range" min="0" max="100" value="50" aria-label="Comparar antes y después">
+          </div>
+          <div class="case-info">
+            <span class="case-tag">Ortodoncia infantil</span>
+            <h3>Corrección temprana de mordida</h3>
+            <ul class="case-meta">
+              <li><strong>Duración:</strong> 14 meses</li>
+              <li><strong>Motivo:</strong> Mordida abierta anterior</li>
+            </ul>
+            <blockquote class="case-quote">
+              "Mi hija llegaba con miedo y terminó pidiendo adelantar la cita."
+              <footer>— Laura G., mamá de Sofía (9 años)</footer>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Case 4 -->
+        <article class="case-card" data-treatment="brackets">
+          <div class="case-slider">
+            <div class="case-before"><span>[Foto antes]</span></div>
+            <div class="case-after"><span>[Foto después]</span></div>
+            <div class="case-handle" aria-hidden="true"></div>
+            <input type="range" class="case-range" min="0" max="100" value="50" aria-label="Comparar antes y después">
+          </div>
+          <div class="case-info">
+            <span class="case-tag">Brackets estéticos</span>
+            <h3>Apiñamiento severo en adultos</h3>
+            <ul class="case-meta">
+              <li><strong>Duración:</strong> 22 meses</li>
+              <li><strong>Motivo:</strong> Apiñamiento severo superior</li>
+            </ul>
+            <blockquote class="case-quote">
+              "A los 40 años pensé que ya no podía, pero fue la mejor decisión."
+              <footer>— Diego A., 41 años</footer>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Case 5 -->
+        <article class="case-card" data-treatment="alineadores">
+          <div class="case-slider">
+            <div class="case-before"><span>[Foto antes]</span></div>
+            <div class="case-after"><span>[Foto después]</span></div>
+            <div class="case-handle" aria-hidden="true"></div>
+            <input type="range" class="case-range" min="0" max="100" value="50" aria-label="Comparar antes y después">
+          </div>
+          <div class="case-info">
+            <span class="case-tag">Alineadores transparentes</span>
+            <h3>Recaída post-ortodoncia</h3>
+            <ul class="case-meta">
+              <li><strong>Duración:</strong> 8 meses</li>
+              <li><strong>Motivo:</strong> Movimiento leve por falta de retenedor</li>
+            </ul>
+            <blockquote class="case-quote">
+              "Ahora sí uso el retenedor. La doctora me explicó por qué era importante."
+              <footer>— Paula V., 29 años</footer>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Case 6 -->
+        <article class="case-card" data-treatment="infantil">
+          <div class="case-slider">
+            <div class="case-before"><span>[Foto antes]</span></div>
+            <div class="case-after"><span>[Foto después]</span></div>
+            <div class="case-handle" aria-hidden="true"></div>
+            <input type="range" class="case-range" min="0" max="100" value="50" aria-label="Comparar antes y después">
+          </div>
+          <div class="case-info">
+            <span class="case-tag">Ortopedia infantil</span>
+            <h3>Guía de crecimiento maxilar</h3>
+            <ul class="case-meta">
+              <li><strong>Duración:</strong> 11 meses</li>
+              <li><strong>Motivo:</strong> Paladar estrecho y apiñamiento temprano</li>
+            </ul>
+            <blockquote class="case-quote">
+              "Le explicaron todo a mi hijo con paciencia y él entendió por qué debía usar el aparato."
+              <footer>— Marcela T., mamá de Juan (8 años)</footer>
+            </blockquote>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="cases-disclaimer">
+        Los resultados varían según cada paciente y dependen de la constancia en
+        el uso de los aparatos y la asistencia a controles.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ============ VIDEO TESTIMONIALS ============ -->
+  <section class="section videos-section">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">Testimonios en video</p>
+        <h2>Escúchalos en sus propias palabras</h2>
+        <p class="section-sub">Pacientes reales contando su experiencia en Dental Care.</p>
+      </header>
+
+      <div class="videos-grid">
+        <div class="video-card">
+          <div class="video-placeholder">
+            <span class="play-btn" aria-hidden="true">▶</span>
+            <small>[Video 1]</small>
+          </div>
+          <p class="video-caption">— Andrés, brackets metálicos</p>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder">
+            <span class="play-btn" aria-hidden="true">▶</span>
+            <small>[Video 2]</small>
+          </div>
+          <p class="video-caption">— Camila, alineadores</p>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder">
+            <span class="play-btn" aria-hidden="true">▶</span>
+            <small>[Video 3]</small>
+          </div>
+          <p class="video-caption">— Familia Gómez, ortodoncia infantil</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GOOGLE REVIEWS CTA ============ -->
+  <section class="section reviews-cta">
+    <div class="container reviews-cta-inner">
+      <div>
+        <p class="eyebrow">Reseñas</p>
+        <h2>¿Quieres leer más opiniones?</h2>
+        <p>Nuestros pacientes también dejan sus comentarios en Google. Échales un vistazo.</p>
+      </div>
+      <a href="[LINK_GOOGLE_REVIEWS]" class="btn btn-primary" target="_blank" rel="noopener">
+        Ver reseñas en Google
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section final-cta">
+    <div class="container final-cta-text center">
+      <h2>¿Listo para tu propio caso de éxito?</h2>
+      <p>Agenda tu valoración inicial y descubre el plan ideal para tu sonrisa.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a href="agenda.html" class="btn btn-vinotinto">Agendar valoración</a>
+        <a href="https://wa.me/573206666666?text=Hola%2C%20vi%20los%20casos%20de%20%C3%A9xito%20y%20quiero%20agendar%20una%20valoraci%C3%B3n." class="btn btn-ghost btn-ghost-light" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-mark">DC</span>
+          <span class="logo-text">Dental Care</span>
+        </a>
+        <p class="footer-desc">Ortodoncia de confianza en La Ceja, Antioquia.</p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul class="footer-list">
+          <li>Calle 20 #12-45, Barrio Centro</li>
+          <li>La Ceja, Antioquia</li>
+          <li><a href="tel:+573206666666">+57 320 666 6666</a></li>
+          <li><a href="mailto:hhhh@gmail.com">hhhh@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Horario</h4>
+        <ul class="footer-list">
+          <li>Lunes a viernes: 8am – 6pm</li>
+          <li>Sábados: 8am – 1pm</li>
+          <li>Domingos: cerrado</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Síguenos</h4>
+        <ul class="footer-list">
+          <li><a href="https://instagram.com/dentalcare.laceja" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/dentalcare.laceja" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://wa.me/573206666666" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Dental Care. Todos los derechos reservados.</p>
+      <p>
+        <a href="privacidad.html">Política de tratamiento de datos</a> ·
+        <a href="terminos.html">Términos y condiciones</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOAT ============ -->
+  <a href="https://wa.me/573206666666?text=Hola%2C%20vi%20los%20casos%20de%20%C3%A9xito%20y%20quiero%20agendar%20una%20valoraci%C3%B3n."
+     class="whatsapp-float" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+      <path fill="currentColor" d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2.1c2.2 1.2 4.8 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.2c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S29 8.9 29 16s-5.8 12.7-13 12.7zm7.1-9.5c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1-2-2.3-2.2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.7.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6-.1-.2-.9-2.1-1.2-2.9-.3-.7-.6-.6-.9-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.2-.8-.4z"/>
+    </svg>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
