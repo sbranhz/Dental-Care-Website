@@ -763,6 +763,13 @@ p { margin: 0 0 1em; }
   text-align: center;
 }
 
+.media-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  display: block;
+}
 /* ---------- PAGE FORM RESPONSIVE ---------- */
 @media (max-width: 860px) {
   .form-inner { grid-template-columns: 1fr; }
