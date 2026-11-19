@@ -1344,3 +1344,229 @@ p { margin: 0 0 1em; }
   color: var(--vinotinto);
   font-style: italic;
 }
+
+
+/* ============================================================
+   DESIGN A — VIVID REFINEMENT
+   Brighter navy · teal accent · warmer cream · subtle depth
+   ============================================================ */
+
+:root {
+  /* New vivid palette */
+  --blue: #163B68;
+  --blue-dark: #0D2A4E;
+  --teal: #0E8A8C;
+  --teal-light: #E6F4F4;
+  --vinotinto: #A02A3D;
+  --vinotinto-dark: #7F1F2E;
+  --beige: #F5EFE6;
+  --gray-50: #F6F8FB;
+  --gray-200: #E4E8EF;
+
+  color-scheme: light;
+}
+
+/* Prevent Chrome forced-dark weirdness */
+html { color-scheme: light; }
+
+/* --- Depth & warmth on section backgrounds --- */
+.hero {
+  background:
+    radial-gradient(ellipse 70% 80% at 85% 20%, rgba(14,138,140,.08) 0%, transparent 60%),
+    linear-gradient(135deg, #F6F8FB 0%, #EEF5F5 55%, #F5EFE6 100%);
+}
+
+.trust-bar {
+  background: linear-gradient(90deg, var(--blue) 0%, var(--blue-dark) 100%);
+  border-top: 3px solid var(--teal);
+}
+
+/* --- Service icons pop with teal --- */
+.service-icon {
+  background: var(--teal-light);
+  color: var(--teal);
+  border-color: transparent;
+}
+
+.service-card {
+  background: #FFFFFF;
+  border-color: var(--gray-200);
+}
+.service-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 8px 24px rgba(14,138,140,.12);
+}
+
+/* --- Why cards — teal hover accent --- */
+.why-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 6px 20px rgba(14,138,140,.08);
+}
+.why-number {
+  color: var(--teal);
+}
+
+/* --- About quote block — teal accent instead of vinotinto --- */
+.about-quote {
+  border-left-color: var(--teal);
+}
+
+/* --- Process steps — teal number badge --- */
+.process-step {
+  border-top-color: var(--teal);
+}
+.step-number {
+  color: var(--teal);
+}
+
+/* --- Bioseguridad — warm cream with teal checkmarks --- */
+.bioseguridad-list li::before {
+  color: var(--teal);
+}
+
+/* --- FAQ accent --- */
+.faq[open] {
+  border-color: var(--teal);
+  box-shadow: 0 4px 16px rgba(14,138,140,.08);
+}
+.faq summary::after {
+  color: var(--teal);
+}
+
+/* --- Tab / filter active state --- */
+.tab.active {
+  color: var(--teal);
+}
+.filter-btn.active {
+  background: var(--teal);
+  border-color: var(--teal);
+}
+.filter-btn:hover {
+  color: var(--teal);
+  border-color: var(--teal);
+}
+
+/* --- Buttons — more depth on hover --- */
+.btn-primary {
+  box-shadow: 0 4px 14px rgba(22,59,104,.15);
+}
+.btn-primary:hover {
+  box-shadow: 0 8px 22px rgba(22,59,104,.25);
+}
+.btn-vinotinto {
+  box-shadow: 0 4px 14px rgba(160,42,61,.2);
+}
+.btn-vinotinto:hover {
+  box-shadow: 0 8px 22px rgba(160,42,61,.3);
+}
+
+/* --- Eyebrow accent (used across pages) --- */
+.eyebrow {
+  color: var(--teal);
+  position: relative;
+  padding-left: .65rem;
+}
+.eyebrow::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 1em;
+  background: var(--teal);
+  border-radius: 2px;
+}
+
+/* --- Testimonial left border — teal --- */
+.testimonial {
+  border-left-color: var(--teal);
+}
+.testimonial footer {
+  color: var(--teal);
+}
+
+/* --- Case tag — teal tint --- */
+.case-tag {
+  color: var(--teal);
+  background: rgba(14,138,140,.1);
+}
+
+/* --- Success icon — teal --- */
+.success-icon {
+  background: rgba(14,138,140,.12);
+  color: var(--teal);
+}
+
+/* --- Form focus — teal ring --- */
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(14,138,140,.15);
+}
+
+/* --- Play button — teal instead of vinotinto --- */
+.play-btn {
+  background: var(--teal);
+  box-shadow: 0 4px 14px rgba(14,138,140,.35);
+}
+
+/* --- Case slider handle — teal --- */
+.case-handle::after {
+  color: var(--teal);
+}
+
+/* --- Legend available — teal --- */
+.legend-available {
+  border-color: var(--teal);
+}
+.slot-available {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+/* --- Footer — deep gradient --- */
+.site-footer {
+  background: linear-gradient(180deg, var(--blue-dark) 0%, #06182C 100%);
+}
+
+/* ============================================================
+   GRID SYMMETRY
+   ============================================================ */
+
+/* Services: lock to 3 per row on desktop (3+3, never 4+2) */
+.services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Por qué elegirnos (5 items): flex + center so last row is balanced */
+.why-grid-5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.why-grid-5 .why-card {
+  flex: 1 1 210px;
+  max-width: 260px;
+}
+
+/* Process steps (4): lock to 4 desktop, 2 tablet, 1 mobile */
+@media (min-width: 900px) {
+  .process-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Cases: 3 per row on desktop for 3+3 balance */
+@media (min-width: 900px) {
+  .cases-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
