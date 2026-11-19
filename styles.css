@@ -400,6 +400,14 @@ p { margin: 0 0 1em; }
 .testimonial footer { font-size: .85rem; font-weight: 600; color: var(--blue); }
 .testimonial footer em { font-weight: 400; color: var(--gray-500); font-size: .8rem; }
 
+
+.media-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  display: block;
+}
 /* ---------- FINAL CTA + MAPA ---------- */
 .final-cta { background: var(--blue); color: var(--white); }
 .final-cta-inner {
@@ -763,13 +771,7 @@ p { margin: 0 0 1em; }
   text-align: center;
 }
 
-.media-img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: var(--radius-lg);
-  display: block;
-}
+
 /* ---------- PAGE FORM RESPONSIVE ---------- */
 @media (max-width: 860px) {
   .form-inner { grid-template-columns: 1fr; }
